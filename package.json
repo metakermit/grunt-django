@@ -3,7 +3,10 @@
   "version": "0.0.1",
   "description": "Grunt task for wrapping references with Django's url template tags (for integration with Django's static assets and easy CDN switching).",
   "homepage": "https://github.com/kermit666/grunt-django",
-  "repository": "https://github.com/kermit666/grunt-django.git",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/kermit666/grunt-django.git"
+  },
   "bugs": "https://github.com/kermit666/grunt-django.git/issues",
   "author": {
     "name": "Dražen Lučanin",
@@ -17,10 +20,6 @@
   "engines": {
     "node": ">= 0.8.0"
   },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/kermit666/grunt-django.git"
-  },
   "licenses": [
     {
       "type": "GPLv3"
@@ -32,7 +31,8 @@
     "grunt-contrib-clean": "~0.4.0",
     "grunt": "~0.4.0rc2",
     "load-grunt-tasks": "~0.2.0",
-    "jshint-stylish": "~0.1.3"
+    "jshint-stylish": "~0.1.3",
+    "grunt-mocha-cli": "~1.3.0"
   },
   "scripts": {
     "test": "grunt test"

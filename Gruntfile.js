@@ -54,6 +54,10 @@ module.exports = function (grunt) {
     // Unit tests.
     nodeunit: {
       tests: ['test/*_test.js']
+    },
+
+    mochacli: {
+      all: ['test/test-*.js']
     }
 
   });
@@ -63,7 +67,7 @@ module.exports = function (grunt) {
 
   // Whenever the "test" task is run, first clean the "tmp" dir, then run this
   // plugin's task(s), then test the result.
-  grunt.registerTask('test', ['clean', 'django', 'nodeunit']);
+  grunt.registerTask('test', ['clean', 'django', 'mochacli']);
 
   // By default, lint and run all tests.
   grunt.registerTask('default', ['jshint', 'test']);
